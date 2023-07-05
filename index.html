@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <style>
+            body{
+                background-color: #FF9EAA;
+                transition: background-color 1.8s ease;
+            }
+    </style>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <audio class="alarm" src="songs/alarm.mp3"></audio>
+    <div class="title animate__animated animate__bounceInDown">
+        <h1 class="titleText">Pomodoro App</h1>
+    </div>
+    <div class="container">
+        <div>
+            <div class="sections" style="background-color: rgba(255, 255, 255, 0.1) !important; padding: 20px; border-radius: 10px; ">
+                <div class="pomodoroTime animate__animated animate__bounceInLeft">
+                    <h2 class="altBaslık pomodrotimetitle"><img class="logo" src="img/time.png" style="margin: 0;" alt="">Pomodoro Time :</h2>
+                    <div class="form-check form-switch" style="display: inline-block;">
+                        <input class="form-check-input yirmibesmin" type="checkbox" role="switch" id="for25min">
+                        <label class="form-check-label" for="for25min" style="margin-left: 8px;">25 Minutes</label>
+                    </div>
+                    <div class="form-check form-switch" style="display: inline-block;">
+                        <input class="form-check-input otuzmin" type="checkbox" role="switch" id="for30min">
+                        <label class="form-check-label" for="for30min" style="margin-left: 8px;">30 Minutes</label>
+                    </div>
+                    <div class="form-check form-switch" style="display: inline-block;">
+                        <input class="form-check-input onehour" type="checkbox" role="switch" id="for1hour">
+                        <label class="form-check-label" for="for1hour" style="margin-left: 8px;">1 Hour</label>
+                    </div>
+                </div>
+                <div class="breakTime animate__animated animate__bounceInRight">
+                    <h2 class="altBaslık breaktimetitle"><img class="logo"  src="img/break.png" style="margin: 0;" alt="">Break Time :</h2>
+                    <div class="form-check form-switch" style="display: inline-block; justify-content: center;">
+                        <input class="form-check-input yirmimin" type="checkbox" role="switch" id="for5minBreak">
+                        <label class="form-check-label" for="for5minBreak" style="margin-left: 8px;">5 Minutes</label>
+                    </div>
+                    <div class="form-check form-switch" style="display: inline-block;">
+                        <input class="form-check-input otuzmin" type="checkbox" role="switch" id="for10minBreak">
+                        <label class="form-check-label" for="for10minBreak" style="margin-left: 8px;">10 Minutes</label>
+                    </div>
+                    <div class="form-check form-switch" style="display: inline-block;">
+                        <input class="form-check-input otuzmin" type="checkbox" role="switch" id="for15minBreak">
+                        <label class="form-check-label" for="for15minBreak" style="margin-left: 8px;">15 Minutes</label>
+                    </div>
+                </div>
+                <div class="songArea animate__animated animate__bounceInUp">
+                    <h2 class="text-center altBaslık"><img class="logo" src="img/music.png" style="margin: 0;" alt="">Song :</h2>
+                    <div class="form-check form-switch" style="display: inline-block; justify-content: center;">
+                        <input class="form-check-input yirmimin" type="checkbox" role="switch" id="piano">
+                        <label class="form-check-label" for="piano" style="margin-left: 8px;">Piano</label>
+                        <audio class="piano" src="songs/piano.mp3" loop></audio>
+                    </div>
+                    <div class="form-check form-switch" style="display: inline-block;">
+                        <input class="form-check-input otuzmin" type="checkbox" role="switch" id="rain">
+                        <label class="form-check-label" for="rain" style="margin-left: 8px;">Rain</label>
+                        <audio class="rain" src="songs/rain.mp3" loop></audio>
+                    </div>
+                    <div class="form-check form-switch" style="display: inline-block;">
+                        <input class="form-check-input otuzmin" type="checkbox" role="switch" id="meditation">
+                        <label class="form-check-label" for="meditation" style="margin-left: 8px;">Meditation Music</label>
+                        <audio class="meditation" src="songs/meditation.mp3" loop></audio>
+                    </div>
+                </div>
+                <div class="startButton row animate__animated animate__swing">
+                    <button class="btn start">START</button>
+                </div>
+                
+            </div>
+            <div class="row timeArea" style="display: none;">
+                <h1 class="time animate__animated animate__bounceInDown"></h1>
+                <h1 class="focus animate__animated animate__bounceInLeft" style="margin-right: 95px !important;">Time to focus !</h1>
+                <div class="buttons row animate__animated animate__bounceInRight">
+                    <button class="btn stop" style="display: none;"><img src="img/pause.png" alt=""></button>
+                    <button class="btn stopTime" style="display: block;"><img src="img/pauseTime.png" alt=""></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

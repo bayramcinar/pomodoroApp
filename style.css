@@ -1,0 +1,163 @@
+*{
+    font-family: 'Roboto Slab', serif;
+}
+
+.time{
+    margin-top: 150px !important;
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif !important;
+}
+.titleText{
+    margin-top: 35px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+#for25min,
+#for30min,
+#for1hour,
+label
+{
+    font-size: 25px !important;
+}
+#for5minBreak,
+#for10minBreak,
+#for15minBreak,
+#rain,
+#piano,
+#meditation{
+    font-size: 25px !important;
+}
+.start{
+    margin-top: 35px !important;
+    font-size: 20px !important;
+    width: auto !important;
+    padding: 12px !important;
+    color: #fff !important;
+    background-color: #3AA6B9 !important;
+    border-radius: 0px 15px 0px 15px !important;
+}
+.start:hover{
+    background-color: #fff !important;
+    color: #3AA6B9 !important;
+    transition: background-color 0.5s ease-in-out;
+}
+h2{
+    font-size: 26px !important;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    font-size: 25px !important;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-top: 60px ;
+}
+.start{
+    margin-left: auto;
+    margin-right: auto;
+}
+.pomodrotimetitle{
+    margin-left: auto !important;
+    margin-right: 90px !important;
+}
+.pomodoroTime{
+    margin-left: 100px !important;
+}
+#for25min{
+    margin-left: 230px;
+}
+#for30min,
+#for1hour,
+#for10minBreak,
+#for15minBreak,
+#rain,
+#meditation {
+    margin-left: 10px;
+}
+.altBaslık{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#for5minBreak{
+    margin-left: 310px;
+}
+#piano{
+    margin-left: 330px;
+}
+.stop{
+    font-size: 40px !important;
+    color: #fff !important;
+    width: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.stopTime{
+    font-size: 40px !important;
+    color: #fff !important;
+    width: auto !important;
+    margin-left: 5px;
+}
+.stop{
+    margin-right: 0 !important;
+}
+img{
+    width: 70px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.focus{
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 50px !important;
+    margin-right: 8px !important;
+}
+.stop:focus {
+    outline: none;
+    border: none;
+}
+.stopTime:focus {
+    outline: none;
+    border: none;
+}
+@media only screen and (max-width: 756px) {
+    #for25min{
+        margin-left: 10px;
+    }
+    #for5minBreak{
+        margin-left: 10px;
+    }
+    #piano{
+        margin-left: 10px;
+    }
+    .time{
+        font-size: 100px !important;
+    }
+    .pomodoroTime{
+        margin-left: 0 !important;
+    }
+    .altBaslık{
+        margin-left: 0 !important;
+    }
+    .pomodrotimetitle{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
