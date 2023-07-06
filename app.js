@@ -337,7 +337,7 @@ function geriyeSay30mins() {
         
         stopTime.addEventListener("click",toggleTime30);
 }
-var süre1 = 5;
+var süre1 = 3600;
 var geriyeSayTimeout1; 
 var isCounting1 = true;
 
@@ -367,7 +367,7 @@ function geriyeSay1hour() {
         stopTime.addEventListener("click",toggleTime1);
 }
 
-var break5 = 10;
+var break5 = 300;
 var gerisaybreak5;
 var isCounting5 = true;
 function geriyeSaybreak5() {
