@@ -18,6 +18,17 @@ var for10minBreak = document.querySelector("#for10minBreak");
 var for15minBreak = document.querySelector("#for15minBreak");
 var alarm =document.querySelector(".alarm");
 var stopTime = document.querySelector(".stopTime");
+var restart = document.querySelector(".restart");
+
+restart.addEventListener("click",function(){
+   
+    function reloadPage() {
+        location.reload();
+    }
+
+    reloadPage();
+        
+});
 
 var pianoInputcheck = document.querySelector("#piano");
 var rainInputcheck = document.querySelector("#rain");
@@ -297,7 +308,7 @@ function toggleTime15() {
     }
 }
 
-var süre30 = 10;
+var süre30 = 1800;
 var geriyeSayTimeout30; 
 var isCounting30 = true;
     
@@ -326,7 +337,7 @@ function geriyeSay30mins() {
         
         stopTime.addEventListener("click",toggleTime30);
 }
-var süre1 = 3600;
+var süre1 = 5;
 var geriyeSayTimeout1; 
 var isCounting1 = true;
 
@@ -374,10 +385,13 @@ function geriyeSaybreak5() {
     if (break5 >= 0) {
         gerisaybreak5 = setTimeout(geriyeSaybreak5, 1000);
     }else{
+        playAlarm();
         document.querySelector(".time").style.fontSize = "50px";
         document.querySelector(".time").style.marginLeft = "auto";
         document.querySelector(".time").style.marginRight = "auto";
         document.querySelector(".time").textContent = "Congratulations ! You've done Pomodoro !";
+        document.querySelector(".restart").style.display = "block";
+        body.style.backgroundColor = "#970bce";
         stop.style.display = "none";
         stopTime.style.display = "none";
         focus.style.display = "none";
@@ -402,10 +416,12 @@ function geriyeSaybreak10() {
     if (break10 >= 0) {
         gerisaybreak10 = setTimeout(geriyeSaybreak10, 1000);
     }else{
+        playAlarm();
         document.querySelector(".time").style.fontSize = "50px";
         document.querySelector(".time").style.marginLeft = "auto";
         document.querySelector(".time").style.marginRight = "auto";
         document.querySelector(".time").textContent = "Congratulations ! You've done Pomodoro !";
+        document.querySelector(".restart").style.display = "block";
         stop.style.display = "none";
         stopTime.style.display = "none";
         focus.style.display = "none";
@@ -430,10 +446,12 @@ function geriyeSaybreak15() {
     if (break15 >= 0) {
         gerisaybreak15 = setTimeout(geriyeSaybreak15, 1000);
     }else{
+        playAlarm();
         document.querySelector(".time").style.fontSize = "50px";
         document.querySelector(".time").style.marginLeft = "auto";
         document.querySelector(".time").style.marginRight = "auto";
         document.querySelector(".time").textContent = "Congratulations ! You've done Pomodoro !";
+        document.querySelector(".restart").style.display = "block";
         stop.style.display = "none";
         stopTime.style.display = "none";
         focus.style.display = "none";

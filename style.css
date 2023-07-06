@@ -1,5 +1,5 @@
 *{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lilita One', cursive;
 }
 
 .time{
@@ -34,7 +34,7 @@ label
 #meditation{
     font-size: 25px !important;
 }
-.start{
+.start,.restart{
     margin-top: 35px !important;
     font-size: 20px !important;
     width: auto !important;
@@ -43,11 +43,13 @@ label
     background-color: #3AA6B9 !important;
     border-radius: 0px 15px 0px 15px !important;
 }
-.start:hover{
+.start:hover,
+.restart:hover{
     background-color: #fff !important;
     color: #3AA6B9 !important;
     transition: background-color 0.5s ease-in-out;
 }
+
 h2{
     font-size: 26px !important;
     color: #fff !important;
@@ -101,6 +103,10 @@ label{
     font-size: 40px !important;
     color: #fff !important;
     width: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.restart{
     margin-left: auto !important;
     margin-right: auto !important;
 }
@@ -160,4 +166,12 @@ img{
         margin-left: auto !important;
         margin-right: auto !important;
     }
+}
+.finishText{
+    color: #fff;
+    margin-top: 200px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
