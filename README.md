@@ -3,12 +3,12 @@ In this project, I made a pomodoro app by using HTML, CSS and JavaScript. You ca
 
 And here there is demo website = http://pomodoroapp.rf.gd/
 
-<h1 style="text-decoration: overline;">Here Photo</h1>
+<h1 style="text-decoration: overline;">Section Screen</h1>
 <img src="https://github.com/bayramcinar/pomodoroApp/assets/99193151/b9dde88d-e0eb-44f1-bfce-7b22f401b1bd" style="width: 500px;">
 
-<h1 style="text-decoration: overline;">Here Photo</h1>
+<h1 style="text-decoration: overline;">Pomodoro Screen</h1>
 <img src="https://github.com/bayramcinar/pomodoroApp/assets/99193151/8e5f5fc3-474f-46b6-a059-9027430f4c0b" style="width: 500px;">
 
 
-<h1 style="text-decoration: overline;">Here Photo</h1>
+<h1 style="text-decoration: overline;">Break Screen</h1>
 <img src="https://github.com/bayramcinar/pomodoroApp/assets/99193151/3ab99057-98aa-4f6f-bad5-74e0eb640ac1" style="width: 500px;">
