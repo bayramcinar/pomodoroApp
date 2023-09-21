@@ -1,7 +1,7 @@
 # pomodoroApp
 In this project, I made a pomodoro app by using HTML, CSS and JavaScript. You can select pomodoro time and break time. Also you can select a music to get relax when you are studying. This app has basic theme. You can stop music while studying if you want. In addition, you can stop pomodoro time and break time.
 
-And here there is demo website = http://pomodoroapp.rf.gd/
+And here there is demo website = https://bayramcinar.github.io/pomodoroApp/
 
 <h1 style="text-decoration: overline;">Section Screen</h1>
 <img src="https://github.com/bayramcinar/pomodoroApp/assets/99193151/b9dde88d-e0eb-44f1-bfce-7b22f401b1bd" style="width: 500px;">
